@@ -47,14 +47,7 @@ function App() {
 
     const changeQuote = () => {setNewQuote(newQuote + 1)} 
 
-    //29 letras por linha
-    let heightRef = 100
-    if (quote){
-      heightRef += Math.ceil(quote[0].quote.length/29) * 32;
-      console.log(Math.ceil(quote[0].quote.length/29))
-      console.log(heightRef)
-    }
-    
+    //29 letras por linha  
 
   return (
     <div className="App">    
@@ -63,8 +56,8 @@ function App() {
       text={quote ? quote[0].quote : 'carregando...' }
       author={quote ? quote[0].author : 'carregando...' }
       funcNewQuote={changeQuote}
-      changeOpacity={opacity}  
-      height = {heightRef}    
+      changeOpacity={opacity} 
+         
      />
      
      <p className='author'>by Leopoldo Moreira</p>
