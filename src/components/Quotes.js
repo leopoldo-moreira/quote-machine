@@ -9,22 +9,27 @@ function QuoteContainer({color, text, author, funcNewQuote, changeOpacity }){
 
     return(
         
-        <div className={styles.mainContainer}>            
-            <div className={styles.quotesContainer}>
+        <div id="quote-box" className={styles.mainContainer}> 
+                      
+            <div className={styles.quotesContainer}>             
                 <div>
                     <FaQuoteLeft style={{color:color, opacity: changeOpacity }}/>
-                </div>
-                
-                <span style={{color:color, opacity: changeOpacity }}>{text}</span>
+                </div>               
+                <span id='text' style={{color:color, opacity: changeOpacity }}>{text}</span>
             </div>
-            <p style={{color:color, opacity: changeOpacity }}>- {author}</p>
-            <div>
-                <Button 
-                type='smallBtn'
-                color={color}
-                text=<FaTwitter style={{color: 'white'}}/>
-                side='left'
-                />
+            <p id='author' style={{color:color, opacity: changeOpacity }}>- {author}</p>
+            
+            <div id="quote-box">
+            
+                <a id='tweet-quote' href="twitter.com/intent/tweet">
+                    <Button 
+                    type='smallBtn'
+                    color={color}
+                    text=<FaTwitter style={{color: 'white'}}/>
+                    side='left'
+                    id="tweet-quote"                
+                    />
+                </a>
 
                 <Button 
                 type='smallBtn'
@@ -39,10 +44,12 @@ function QuoteContainer({color, text, author, funcNewQuote, changeOpacity }){
                 text='New Quote'
                 side='right'
                 funcNewQuote={funcNewQuote}
+                id='new-quote'
                 />
                 
             </div>            
         </div>
+        
     )
 }
 

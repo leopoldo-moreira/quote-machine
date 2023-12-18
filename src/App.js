@@ -50,14 +50,14 @@ function App() {
     //29 letras por linha  
 
   return (
-    <div className="App">    
+    <div className="App">      
+      
      <Quotes
       color={mainColor ? "#" + mainColor : '#472E32'}
       text={quote ? quote[0].quote : 'carregando...' }
       author={quote ? quote[0].author : 'carregando...' }
       funcNewQuote={changeQuote}
-      changeOpacity={opacity} 
-         
+      changeOpacity={opacity}          
      />
      
      <p className='author'>by Leopoldo Moreira</p>
