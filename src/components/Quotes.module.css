@@ -1,0 +1,34 @@
+.mainContainer{
+    margin: 3em auto auto auto;
+    border: none;
+    width: fit-content;  
+    max-width: 400px;    
+    background-color: #fff;
+    padding: 3em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;    
+    transition: 1s;
+}
+
+.mainContainer p{
+    text-align: right;
+}
+
+.quotesContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.quotesContainer svg{
+    font-size: 1.5em;
+    margin-right: .3em;
+    transition: .5s;
+}
+
+.quotesContainer span{
+    font-weight: 500;
+    font-size: 1.75em;  
+    transition: .5s;  
+    text-align: left;
+}

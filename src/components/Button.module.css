@@ -1,0 +1,26 @@
+.btn{
+    border: none;
+    border-radius: 3px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #fff;
+    padding: auto auto;
+    line-height: .7em; 
+    transition: .5s; 
+    height: 30px;  
+}
+
+.btn:hover{
+    opacity: 0.8; 
+}
+
+.smallBtn{
+    width: 40px;     
+    font-size: 1.2em;
+    margin-right: .2em;       
+}
+
+.largeBtn{
+    font-size: 0.85em;
+    width: 120px;
+}
