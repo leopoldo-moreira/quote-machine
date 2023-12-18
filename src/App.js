@@ -2,6 +2,7 @@ import './App.css';
 import Quotes from './components/Quotes';
 import { useState, useEffect } from 'react' 
 
+
 function App() {
 
   const [quote, setQuote] = useState()
@@ -58,7 +59,10 @@ function App() {
       author={quote ? quote[0].author : 'carregando...' }
       funcNewQuote={changeQuote}
       changeOpacity={opacity}          
-     />
+     >
+
+      
+     </Quotes>
      
      <p className='author'>by Leopoldo Moreira</p>
     </div>

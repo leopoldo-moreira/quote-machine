@@ -26,8 +26,7 @@ function QuoteContainer({color, text, author, funcNewQuote, changeOpacity }){
                     type='smallBtn'
                     color={color}
                     text=<FaTwitter style={{color: 'white'}}/>
-                    side='left'
-                    id="tweet-quote"                
+                    side='left'                                   
                     />
                 </a>
 
